@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Member.css">
+</head>
+<body>
+    <!-- post로 member변수에 있는 값들을 받아오세요 -->
+    
+    <h1> 실제로 쓰는 비밀번호를 절대 입력하지 마세요. </h1>
+    <h1> DB에 암호화 되지 않은 방식으로 전송합니다. </h1>
+    
+    <br><br><br><br>
+
+    <form action="/Memberjoin" method="post">
+        <table>
+            <tr class="border">
+                <td style="width:30%">아이디(닉네임) :</td>
+                <td><input type="text" name="id"></td>
+                <td class="explain">2 ~ 8 자리로 입력해 주세요 중복 불가능</td>
+            </tr>
+            <tr class="border">
+                <td>이름 :</td>
+                <td><input type="text" name="name"></td>
+                <td class="explain">한글만 가능합니다</td>
+            </tr>
+            <tr class="border">
+                <td>이메일 :</td>
+                <td><input type="email" name="email"></td>
+                <td class="explain">이메일 형식으로 적어주세요</td>
+            </tr>
+            <tr class="border">
+                <td>비밀번호 :</td>
+                <td><input type="text" name="password"></td>
+                <td class="explain">영문와 숫자로 2~8 자리로 입력해 주세요</td>
+            </tr>
+            <tr>
+                <td colspan="3"; style="text-align: center;">
+                    <button type ="reset">다시하기</button>
+                    <button type ="submit">제출</button>
+                </td>
+            </tr>
+        </table>
+     </form>
+     <!-- 2~8자리 한글만 가능한 정규식 -->
+</body>
+</html>

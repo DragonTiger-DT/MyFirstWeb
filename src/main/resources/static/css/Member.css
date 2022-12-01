@@ -1,0 +1,22 @@
+table{
+    border: 1px solid;
+    width: 600px;
+    height: 500px;
+} 
+
+tr td:first-child{
+    width:300px;
+}
+
+tr{
+    border: 1px solid;
+}
+
+.explain{
+    font-size: 10px;
+    color: gray;
+}
+
+.border{
+    border: 1px solid;
+}

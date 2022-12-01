@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+}
+
+article{
+    padding-top : 60px;
+    padding-left: 100px;
+}
+
+.left {
+    text-align: left;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+tr:first-child td:first-child{
+    width:300px;
+}
+
+table{
+    margin-bottom: 50px;
+}
+
+section{
+    padding-bottom: 150px;
+}
+
+hr{
+    opacity: 0.5;
+    margin-bottom : 20px;
+}
+
+h2{
+    color: green;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+
+a:hover {
+    color: black;
+}
+
+.navbar__item{
+    color: rgb(71, 78, 85);
+}
+
+.navbar__item:hover{
+    color: blue;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+
+
+/* header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px
+}
+
+.navbar__toogleBtn {
+    display: none;
+}
+
+.navbar__logo {
+    font-size: 1.3rem;
+}
+
+.navbar__icons {
+    padding-left : 0;
+    display: flex;
+}
+
+.navbar__menu{
+    display: flex;
+    padding-left : 0;
+    margin-top : 0;
+    margin-bottom : 0;
+}
+
+.navbar__menu li{
+    padding: 8px
+}
+
+
+@media screen and (max-width: 964px){
+    .navbar {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        padding-top : 20px;
+        display:none;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        padding-left: 0;
+        width: 100%;
+    }
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .navbar__icons{
+        display:none;
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+    .navbar__item{
+        padding-left: 0;
+    }
+    .navbar__toogleBtn{
+        display: block;
+        position: absolute;
+        right: 32px;
+        font-size: 24px;
+    }
+
+
+    .navbar__menu.active,
+    .navbar__icons.active{
+        display: flex;
+    }
+}
+  
+

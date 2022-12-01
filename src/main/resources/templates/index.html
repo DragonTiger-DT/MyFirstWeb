@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyFirstWeb</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- import js -->
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/ce9db0be33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">                
+                <!-- <i class="fa-solid fa-pizza-slice"></i>를 클릭하면 Overview html로 이동함 -->
+                <a href="/">
+                    <i class="fa-solid fa-dragon"></i>
+                        <!-- Dragontiger -->
+                    <i class="fa-solid fa-d"></i>
+                    <i class="fa-solid fa-r"></i>
+                    <i class="fa-solid fa-a"></i>
+                    <i class="fa-solid fa-g"></i>
+                    <i class="fa-solid fa-o"></i>
+                    <i class="fa-solid fa-n"></i>
+                    <i class="fa-solid fa-t"></i>
+                    <i class="fa-solid fa-i"></i>
+                    <i class="fa-solid fa-g"></i>
+                    <i class="fa-solid fa-e"></i>
+                    <i class="fa-solid fa-r"></i>
+                    
+                </a>
+                <!-- 피자조각과 studiosubway -->
+            </div>
+
+            <!-- overview references brandstory information reservation -->
+
+            <ul class="navbar__menu" style="cursor:pointer">
+                <li class="navbar__item" onclick = "
+                    fetch('tab1').then(function(response){
+                    response.text().then(function(text){
+                    document.querySelector('tab').innerHTML = text;
+                    })
+                })">Introduction</li>
+
+                <li class="navbar__item" onclick = "
+                    fetch('tab2').then(function(response){
+                    response.text().then(function(text){
+                    document.querySelector('tab').innerHTML = text;
+                    })
+                })">Register</li>
+
+                <li class="navbar__item" onclick = "
+                    fetch('tab3').then(function(response){
+                    response.text().then(function(text){
+                    document.querySelector('tab').innerHTML = text;
+                    })
+                })">MemberList</li>
+
+                <li class="navbar__item" onclick = "
+                    fetch('tab4').then(function(response){
+                    response.text().then(function(text){
+                    document.querySelector('tab').innerHTML = text;
+                    })
+                })">AdministratorPage</li>
+
+                <li class="navbar__item" onclick = "
+                    fetch('tab5').then(function(response){
+                    response.text().then(function(text){
+                    document.querySelector('tab').innerHTML = text;
+                    })
+                })">tab5</li>
+            </ul>
+              
+
+            <ul class="navbar__icons">
+                <li>
+                    <a href="https://www.instagram.com/dragon_____tiger/"> <!-- 인스타 링크 주소 -->
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <a href="#" class="navbar__toogleBtn">
+                <i class="fas fa-bars"></i>
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- ajax통신으로 article 영역을 만든다. -->
+    <article>
+        <tab>
+            <!-- defalut page 설정 -->
+            <script>
+                fetch('tab1').then(function(response){
+                    response.text().then(function(text){
+                        document.querySelector('tab').innerHTML = text;
+                    })
+                })
+            </script>
+        </tab>
+    </article>
+
+    <!-- 내 스킬들  -->
+
+    
+
+
+</body>
+</html>
