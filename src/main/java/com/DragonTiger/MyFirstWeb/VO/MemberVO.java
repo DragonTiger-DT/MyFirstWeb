@@ -1,6 +1,5 @@
 package com.DragonTiger.MyFirstWeb.VO;
 
-import java.util.Date;
 
 public class MemberVO {
 
